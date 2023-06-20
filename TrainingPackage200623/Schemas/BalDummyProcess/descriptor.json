@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "889f20ee-f0ad-4536-87c7-b4054bb59419",
     "Name": "BalDummyProcess",
-    "ModifiedOnUtc": "\/Date(1687253548000)\/",
+    "ModifiedOnUtc": "\/Date(1687255712000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Bal Dummy Process",
     "DependsOn": []
