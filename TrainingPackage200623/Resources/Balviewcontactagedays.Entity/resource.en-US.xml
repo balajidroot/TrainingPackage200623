@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Balviewcontactagedays" />
+			<Item Name="Columns.Balagedays.Caption" Value="User Age in Days" />
+			<Item Name="Columns.Balbirthdate.Caption" Value="User Birth Date" />
+			<Item Name="Columns.Balid.Caption" Value="Id" />
+			<Item Name="Columns.Balname.Caption" Value="User Name" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

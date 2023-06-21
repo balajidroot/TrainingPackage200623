@@ -1,0 +1,100 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "EntitySchemaManager",
+      "UId": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+      "A2": "Balviewcontactagedays",
+      "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "7ee779a3-9e69-55e9-41f2-1ed2d98c9b42",
+      "B8": "8.0.9.1582",
+      "EG1": {
+        "UId": "b43e1a31-0e19-4065-8b50-1bbed0ae073d",
+        "A2": "BalEntity_cc9569bEventsProcess",
+        "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+        "B1": [],
+        "B2": [],
+        "B3": [],
+        "B8": "8.0.9.1582",
+        "FJ1": [],
+        "IJ3": false,
+        "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+        "BK15": [],
+        "BK37": {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+          "A2": "NotificationCaption",
+          "A3": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+          "A4": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#[PropertyValue:Caption]#]"
+          }
+        },
+        "BK1": "FFFFFFFF",
+        "BK2": "FFBBBBBB",
+        "BK3": [],
+        "BK5": [],
+        "BK4": [],
+        "BK9": [],
+        "BK10": true,
+        "BK34": "null",
+        "Labels": [],
+        "BK24": [],
+        "JC1": []
+      },
+      "D10": true,
+      "D8": "1b56b061-4e91-4974-9038-df8340e534f2",
+      "D29": "null",
+      "D30": "null",
+      "D31": "null",
+      "D3": "97196e8e-18b5-e69f-cf40-c9072ddb76d9",
+      "D2": [
+        {
+          "UId": "9be18df8-2ce6-f7f5-348e-f207382674f1",
+          "A2": "Balagedays",
+          "A3": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A4": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+          "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+        },
+        {
+          "UId": "5e689f26-a2b5-ee6a-533e-610bd15fd2fd",
+          "A2": "Balbirthdate",
+          "A3": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A4": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+          "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+        },
+        {
+          "UId": "97196e8e-18b5-e69f-cf40-c9072ddb76d9",
+          "A2": "Balid",
+          "A3": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A4": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+          "S2": "23018567-a13c-4320-8687-fd6f9e3699bd"
+        },
+        {
+          "UId": "8df96b83-d599-a72b-ff8c-3ffca2087ec7",
+          "A2": "Balname",
+          "A3": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A4": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+          "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+          "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+        }
+      ],
+      "D6": [],
+      "D20": {
+        "A2": "BalviewcontactagedaysEvents"
+      },
+      "D35": {},
+      "D36": {
+        "A3": "a8d15a35-dbc5-43b6-9c76-0d64b9eef5e7",
+        "BS1": false
+      }
+    }
+  }
+}
