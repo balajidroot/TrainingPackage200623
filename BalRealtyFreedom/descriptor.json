@@ -1,0 +1,26 @@
+﻿{
+  "Descriptor": {
+    "UId": "0d189608-0af0-4e12-9fb0-3870bddbc77a",
+    "Name": "BalRealtyFreedom",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/BalRealtyFreedom.csproj",
+    "DependsOn": [
+      {
+        "UId": "06d9ef10-51d8-122c-8933-9212e84236c9",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtBase"
+      },
+      {
+        "UId": "7f8469ff-cb9b-40f6-a5f5-6aa3ddded07a",
+        "PackageVersion": "7.8.0",
+        "Name": "HomePage"
+      },
+      {
+        "UId": "a17d52e6-97ab-6f7f-17aa-f0e197e488ea",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtUIv2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "50ab12d8-05b5-4603-b5f8-aa482a498df2",
+    "Name": "BalRealtyOfferTypeFreedomUI",
+    "ModifiedOnUtc": "\/Date(1687443526000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Offer Type (Freedom UI)",
+    "DependsOn": []
+  }
+}

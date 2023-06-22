@@ -1,0 +1,140 @@
+= MetaData.Schema.UId "8804dd74-a7ce-4a4f-bd30-153dda2d502b"
+= MetaData.Schema.A2 "BalRealty"
+= MetaData.Schema.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
+= MetaData.Schema.B6 "0d189608-0af0-4e12-9fb0-3870bddbc77a"
+= MetaData.Schema.EG1.UId "35ed072d-b64b-48d9-a321-be185b27409b"
+= MetaData.Schema.EG1.A2 "BalRealtyEventsProcess"
+= MetaData.Schema.EG1.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
+= MetaData.Schema.EG1.B1 []
+= MetaData.Schema.EG1.B3 []
++ MetaData.Schema.EG1.B8 "0.0.0.0"
+= MetaData.Schema.EG1.FJ1 []
+= MetaData.Schema.EG1.BK37.A3 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
+= MetaData.Schema.EG1.BK37.A4 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
+= MetaData.Schema.EG1.BK3 []
+= MetaData.Schema.EG1.BK4 []
++ MetaData.Schema.EG1.Labels []
+= MetaData.Schema.D8 "1bab9dcf-17d5-49f8-9536-8e0064f1dce0"
++ MetaData.Schema.D29 "null"
++ MetaData.Schema.D30 "null"
++ MetaData.Schema.D31 "null"
++ MetaData.Schema.D4 "22d97f89-649b-4724-a9ec-8e6b6837fa86"
++ MetaData.Schema.D2 {
+  "UId": "22d97f89-649b-4724-a9ec-8e6b6837fa86",
+  "A2": "BalName",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd",
+  "E2": 1,
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "aa745945-96c3-7a76-49bd-f43fd6538b72",
+  "A2": "BalRealtyManagerFreedom",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "16be3651-8fe2-4159-8dd0-a803d4683dd3",
+  "E6": true,
+  "E17": "BalRealtyManagerFreedomId",
+  "E18": "BalRealtyManagerFreedomName"
+}
++ MetaData.Schema.D2 {
+  "UId": "b74903d7-c53a-261f-53b3-9df0b9f1d350",
+  "A2": "BalRealtCommentsFreedom",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd",
+  "E25": true
+}
++ MetaData.Schema.D2 {
+  "UId": "26ea396c-56e1-9a36-d056-971bb51bccb4",
+  "A2": "BalRealtyOfferTypeFreedom",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "50ab12d8-05b5-4603-b5f8-aa482a498df2",
+  "E6": true,
+  "E17": "BalRealtyOfferTypeFreedomId",
+  "E18": "BalRealtyOfferTypeFreedomName"
+}
++ MetaData.Schema.D2 {
+  "UId": "4c25501d-c0ab-12c7-a11e-f5261f41448b",
+  "A2": "BalRealtyFreedomType",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "3f291ba4-2459-492f-83bf-a43e72309d1e",
+  "E6": true,
+  "E17": "BalRealtyFreedomTypeId",
+  "E18": "BalRealtyFreedomTypeName"
+}
++ MetaData.Schema.D2 {
+  "UId": "88b929a9-eac6-f801-e2bb-fec62f60bc38",
+  "A2": "BalAreaSqft",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
+}
++ MetaData.Schema.D2 {
+  "UId": "5644edb9-2654-c080-17ae-bda240994e5c",
+  "A2": "BalPriceUSD",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
+}
++ MetaData.Schema.D2 {
+  "UId": "5c30677a-3544-18fb-3537-3ef726e4c14e",
+  "A2": "BalEmployeeTypeHiddenFreedomUI",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "0b5ff414-e00a-4115-af0c-fe872e826f07",
+  "E6": true,
+  "E12": {
+    "FB1": 1,
+    "FB2": "60733efc-f36b-1410-a883-16d83cab0980"
+  },
+  "E17": "BalEmployeeTypeHiddenFreedomUIId",
+  "E18": "BalEmployeeTypeHiddenFreedomUIName"
+}
++ MetaData.Schema.D2 {
+  "UId": "fe260b86-f6d5-57bf-79af-3ce37c982eec",
+  "A2": "BalCommissionusdfreedom",
+  "A3": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A4": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+  "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "E5": false
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","22d97f89-649b-4724-a9ec-8e6b6837fa86","aa745945-96c3-7a76-49bd-f43fd6538b72","b74903d7-c53a-261f-53b3-9df0b9f1d350","26ea396c-56e1-9a36-d056-971bb51bccb4","4c25501d-c0ab-12c7-a11e-f5261f41448b","88b929a9-eac6-f801-e2bb-fec62f60bc38","5644edb9-2654-c080-17ae-bda240994e5c","5c30677a-3544-18fb-3537-3ef726e4c14e","fe260b86-f6d5-57bf-79af-3ce37c982eec"]
+= MetaData.Schema.D20.A2 "BalRealtyEvents"
+= MetaData.Schema.D36.A3 "8804dd74-a7ce-4a4f-bd30-153dda2d502b"
+= MetaData.Schema.D36.BS1 false
+- MetaData.Schema.EG1.B6
+- MetaData.Schema.EG1.BK29
+- MetaData.Schema.EG1.BK30
+- MetaData.Schema.D1
+- MetaData.Schema.D20.A5
+- MetaData.Schema.D20.FA4
+- MetaData.Schema.D20.FA5
+- MetaData.Schema.D20.FA6
+- MetaData.Schema.D20.FA7
+- MetaData.Schema.D20.FA11
+- MetaData.Schema.D20.FA12
+- MetaData.Schema.D20.FA15
++ MetaData.Schema.B7 false
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false

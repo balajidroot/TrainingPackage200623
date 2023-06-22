@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3f291ba4-2459-492f-83bf-a43e72309d1e",
+    "Name": "BalRealtyTypeLookupFreedomUI",
+    "ModifiedOnUtc": "\/Date(1687357919000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Type (Freedom UI)",
+    "DependsOn": []
+  }
+}

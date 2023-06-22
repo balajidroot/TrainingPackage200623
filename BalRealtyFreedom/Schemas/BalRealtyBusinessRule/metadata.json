@@ -1,0 +1,93 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "212a9bfe-ef10-4ab1-85d9-600f88d7a7e3",
+      "A2": "BalRealtyBusinessRule",
+      "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "0d189608-0af0-4e12-9fb0-3870bddbc77a",
+      "B8": "8.0.9.1582",
+      "AD1": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+      "AD2": "EntitySchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "39a24453-ab25-8d49-db73-a1b8017d4e56",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "2fe8a395-0c82-ee0a-cf96-3e268ad2dc78",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "8cc68148-3cf9-87e9-4ea9-12c54b450ecf",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "dc0c65bb-0a98-4b67-839d-ec2f5fe83d9f",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "2f9d80ad-f9d8-337d-3ce0-0291f439def6",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "Id",
+                        "BRX2": "null"
+                      },
+                      "BCO3": 1
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionFilterLookup",
+                    "UId": "a24c6fe9-cb12-10f2-66d5-0d575034ae11",
+                    "BRA2": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                      "UId": "8dc77e6b-f776-44cd-9775-12d0d4b4a81b",
+                      "BRX1": "null",
+                      "BRX2": "null"
+                    },
+                    "BRA3": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                      "UId": "fbc69be8-ca4c-48a2-87ac-0ca5324e9937"
+                    },
+                    "BSFL1": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleFilterLookupExpression",
+                      "UId": "7825b14d-56f2-016a-e00e-babf9846e8c5",
+                      "BVP1": "BalRealtyManagerFreedom",
+                      "BVF1": "Type"
+                    },
+                    "BSFR1": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleFilterLookupExpression",
+                      "UId": "7866d5df-3f65-9241-a893-40751f572c87",
+                      "BVP1": "BalEmployeeTypeHiddenFreedomUI"
+                    }
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "2645dff7-e203-2f48-2c9a-e4ceb99c85c2",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "2ed85b3f-08c4-0778-b498-8ee4601fd523",
+                "BRT1": "Id"
+              }
+            ],
+            "BR3": "BusinessRule_ccc5212"
+          }
+        ]
+      }
+    }
+  }
+}

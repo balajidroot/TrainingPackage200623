@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "8edee8a3-28f2-4bda-84e7-04ad97e9ca94",
+      "A2": "BalRealtyRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "8804dd74-a7ce-4a4f-bd30-153dda2d502b",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "9b1efc85-9469-4281-80e1-92f09c318d4f",
+            "PageSchemaUId": "f2c2ffe1-8da9-41e4-af61-0eb17c2c3de7",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Visit (Freedom UI)" />
+			<Item Name="Columns.BalRealtyParentFreedom.Caption" Value="Parent Realty (Freedom UI)" />
+			<Item Name="Columns.BalRealtyPortentialCustomer.Caption" Value="Realty Potential Customer" />
+			<Item Name="Columns.BalRealtyVisitComments.Caption" Value="Visit Comments" />
+			<Item Name="Columns.BalRealtyVisitDateTime.Caption" Value="Realty Visit Date Time" />
+			<Item Name="Columns.BalRealtyVisitManager.Caption" Value="Realty Visit Manager" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8edee8a3-28f2-4bda-84e7-04ad97e9ca94",
+    "Name": "BalRealtyRelatedPage",
+    "ModifiedOnUtc": "\/Date(1687357281000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty (Page settings)",
+    "DependsOn": []
+  }
+}

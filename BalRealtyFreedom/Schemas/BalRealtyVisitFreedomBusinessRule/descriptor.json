@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "708554fa-be8c-42c0-a957-4774bab0f8f0",
+    "Name": "BalRealtyVisitFreedomBusinessRule",
+    "ModifiedOnUtc": "\/Date(1687449729000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty Visit (Freedom UI) (Business rules)",
+    "DependsOn": []
+  }
+}

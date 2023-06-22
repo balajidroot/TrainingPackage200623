@@ -1,0 +1,23 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "708554fa-be8c-42c0-a957-4774bab0f8f0",
+      "A2": "BalRealtyVisitFreedomBusinessRule",
+      "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "0d189608-0af0-4e12-9fb0-3870bddbc77a",
+      "B8": "8.0.9.1582",
+      "AD1": "49991f69-4de2-41d5-9f28-227cc1f58285",
+      "AD2": "EntitySchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": []
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty" />
+			<Item Name="Columns.BalAreaSqft.Caption" Value="Area Sqft" />
+			<Item Name="Columns.BalCommissionusdfreedom.Caption" Value="Commission USD" />
+			<Item Name="Columns.BalEmployeeTypeHiddenFreedomUI.Caption" Value="Realty Employee Type Freedom (Hidden)" />
+			<Item Name="Columns.BalName.Caption" Value="Name" />
+			<Item Name="Columns.BalPriceUSD.Caption" Value="Price USD" />
+			<Item Name="Columns.BalRealtCommentsFreedom.Caption" Value="Comments" />
+			<Item Name="Columns.BalRealtyFreedomType.Caption" Value="Realty Type" />
+			<Item Name="Columns.BalRealtyManagerFreedom.Caption" Value="Manager" />
+			<Item Name="Columns.BalRealtyOfferTypeFreedom.Caption" Value="Offer Type" />
+		</Items>
+	</Group>
+</Resources>

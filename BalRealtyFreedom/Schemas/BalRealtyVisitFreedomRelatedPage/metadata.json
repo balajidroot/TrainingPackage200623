@@ -1,0 +1,41 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "21a8f84b-0039-4287-b6dc-595e8f73ad47",
+      "A2": "BalRealtyVisitFreedomRelatedPage",
+      "A5": "eac08b0b-0f5d-4739-80e4-b08f8d8498ff",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "0d189608-0af0-4e12-9fb0-3870bddbc77a",
+      "B8": "8.0.9.1582",
+      "AD1": "49991f69-4de2-41d5-9f28-227cc1f58285",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "93ab3cda-a452-0555-4ec8-088117e51f30",
+      "PageSchemaUId": "cbc30c12-e255-45bd-a3ff-3ec0db06d8c1",
+      "IsDefault": false,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": true
+      },
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008"
+    },
+    {
+      "UId": "f93fb2a2-eac0-a3e6-d678-541b098b0ede",
+      "PageSchemaUId": "cbc30c12-e255-45bd-a3ff-3ec0db06d8c1",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": null,
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008"
+    }
+  ]
+}
+    }
+  }
+}
