@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c151c771-8a31-441f-8e54-0acf736d69ed",
+    "Name": "BalRealtyClassicTag",
+    "ModifiedOnUtc": "\/Date(1687530435000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic section tag",
+    "DependsOn": []
+  }
+}

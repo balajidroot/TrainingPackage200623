@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "4afb5956-87f9-4d3a-9cc7-544cb590d90e",
+    "Name": "BalRealtyClassic",
+    "ModifiedOnUtc": "\/Date(1687711237000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic",
+    "DependsOn": []
+  }
+}

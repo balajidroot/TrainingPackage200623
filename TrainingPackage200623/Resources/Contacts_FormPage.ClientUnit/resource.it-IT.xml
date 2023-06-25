@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="it-IT">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.GridDetailAddBtn_8hnptnp_caption.Value" Value="Nuovo" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_f26nmj3_caption.Value" Value="Importazione dati" />
+			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="Nuovo" />
+			<Item Name="LocalizableStrings.LeadExpansionPanel_title.Value" Value="EmailTabImage" />
+			<Item Name="LocalizableStrings.LeadExportDataButton_caption.Value" Value="Esporta in Excel" />
+			<Item Name="LocalizableStrings.LeadImportDataButton_caption.Value" Value="Importazione dati" />
+			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Aggiorna" />
+			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Ricerca" />
+			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Azioni" />
+			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Nuovo" />
+			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Opportunità" />
+			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Esporta in Excel" />
+			<Item Name="LocalizableStrings.OpportunityImportDataButton_caption.Value" Value="Importazione dati" />
+			<Item Name="LocalizableStrings.OpportunityRefreshButton_caption.Value" Value="Aggiorna" />
+			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Ricerca" />
+			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Azioni" />
+			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Prodotti consigliati" />
+			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Esporta in Excel" />
+			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Aggiorna" />
+			<Item Name="LocalizableStrings.RecommendedProductSearchFilter_placeholder.Value" Value="Ricerca" />
+			<Item Name="LocalizableStrings.RecommendedProductSettingsButton_caption.Value" Value="Azioni" />
+			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Vendite" />
+		</Items>
+	</Group>
+</Resources>

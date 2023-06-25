@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c25f49f6-ca1e-4bce-a210-8e78b71238cd",
+    "Name": "BalRealtyClassicFolder",
+    "ModifiedOnUtc": "\/Date(1687530423000)\/",
+    "Parent": {
+      "UId": "d602bf96-d029-4b07-9755-63c8f5cb5ed5",
+      "Name": "BaseFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic folder",
+    "DependsOn": []
+  }
+}

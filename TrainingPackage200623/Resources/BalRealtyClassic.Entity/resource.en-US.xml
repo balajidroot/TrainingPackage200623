@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Classic" />
+			<Item Name="Columns.BalCommissionUSDClassic.Caption" Value="Commission USD" />
+			<Item Name="Columns.BalName.Caption" Value="Name" />
+			<Item Name="Columns.BalNotes.Caption" Value="Notes" />
+			<Item Name="Columns.BalPriceUSDClassic.Caption" Value="Price USD Classic" />
+			<Item Name="Columns.BalRealtyAreaSqftClassic.Caption" Value="Area Sqft" />
+			<Item Name="Columns.BalRealtyCommentClassic.Caption" Value="Comments" />
+			<Item Name="Columns.BalRealtyCommissionMultiplierClassic.Caption" Value="Commission Multiplier Classic" />
+			<Item Name="Columns.BalRealtyManagerClassic.Caption" Value="Manager" />
+			<Item Name="Columns.BalRealtyOfferTypeClassic.Caption" Value="Offer Type" />
+			<Item Name="Columns.BalRealtyTypeClassic1.Caption" Value="Realty Type" />
+		</Items>
+	</Group>
+</Resources>

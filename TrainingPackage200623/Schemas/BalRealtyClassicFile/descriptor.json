@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "0f8f2cd1-acd1-4dd0-bc80-59123e6998c9",
+    "Name": "BalRealtyClassicFile",
+    "ModifiedOnUtc": "\/Date(1687530416000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic attachment",
+    "DependsOn": []
+  }
+}

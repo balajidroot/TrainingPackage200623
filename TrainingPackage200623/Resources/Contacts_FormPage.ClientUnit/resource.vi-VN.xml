@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="vi-VN">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.GridDetailAddBtn_8hnptnp_caption.Value" Value="Hợp đồng mới" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_f26nmj3_caption.Value" Value="Nhập dữ liệu" />
+			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.LeadExpansionPanel_title.Value" Value="MQL/SQL" />
+			<Item Name="LocalizableStrings.LeadExportDataButton_caption.Value" Value="Xuất ra Excel" />
+			<Item Name="LocalizableStrings.LeadImportDataButton_caption.Value" Value="Nhập dữ liệu" />
+			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Làm mới" />
+			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Các hành động" />
+			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Hợp đồng mới" />
+			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Các cơ hội" />
+			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Xuất ra Excel" />
+			<Item Name="LocalizableStrings.OpportunityImportDataButton_caption.Value" Value="Nhập dữ liệu" />
+			<Item Name="LocalizableStrings.OpportunityRefreshButton_caption.Value" Value="Làm mới" />
+			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Tìm kiếm" />
+			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Các hành động" />
+			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Các sản phẩm đề xuất" />
+			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Xuất ra Excel" />
+			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Làm mới" />
+			<Item Name="LocalizableStrings.RecommendedProductSearchFilter_placeholder.Value" Value="Tìm kiếm" />
+			<Item Name="LocalizableStrings.RecommendedProductSettingsButton_caption.Value" Value="Các hành động" />
+			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Bán hàng" />
+		</Items>
+	</Group>
+</Resources>

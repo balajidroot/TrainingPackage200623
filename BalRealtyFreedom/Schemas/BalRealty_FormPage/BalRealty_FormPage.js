@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -61,7 +62,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"iconPosition": "only-text",
 					"visible": true,
 					"clicked": {
-						"request": "crt.SaveRecordRequest"
+						"request": "bal.pushmebuttonclicked"
 					},
 					"clickMode": "default"
 				},
@@ -151,45 +152,6 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_0txrhfg",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"row": 1,
-						"colSpan": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.LookupAttribute_wk8x94q",
-					"labelPosition": "auto",
-					"control": "$LookupAttribute_wk8x94q",
-					"listActions": [],
-					"showValueAsLink": true,
-					"controlActions": []
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_cso9lhl",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_cso9lhl_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_0txrhfg",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_5s8la8j",
 				"values": {
 					"layoutConfig": {
@@ -208,7 +170,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -229,17 +191,42 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Input_lt0wsr2",
+				"name": "ComboBox_0txrhfg",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.StringAttribute_oflsa0q",
+					"layoutConfig": {
+						"column": 1,
+						"row": 1,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.LookupAttribute_wk8x94q",
 					"labelPosition": "auto",
-					"control": "$StringAttribute_oflsa0q",
-					"multiline": false
+					"control": "$LookupAttribute_wk8x94q",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": []
 				},
-				"parentName": "GeneralInfoTab",
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_cso9lhl",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_cso9lhl_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_0txrhfg",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -247,13 +234,22 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"values": {
 					"type": "crt.ComboBox",
 					"label": "$Resources.Strings.LookupAttribute_z3px23p",
-					"labelPosition": "auto",
+					"labelPosition": "left",
 					"control": "$LookupAttribute_z3px23p",
 					"listActions": [],
 					"showValueAsLink": true,
-					"controlActions": []
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": "",
+					"layoutConfig": {
+						"column": 1,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "GeneralInfoTab",
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 2
 			},
@@ -276,6 +272,29 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "NumberInput_xn7yloy",
+				"values": {
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier",
+					"control": "$BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"visible": true,
+					"layoutConfig": {
+						"column": 2,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_4gdfsel",
 				"values": {
 					"type": "crt.ComboBox",
@@ -292,23 +311,30 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_xn7yloy",
+				"name": "Input_lt0wsr2",
 				"values": {
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier",
-					"control": "$BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier",
-					"readonly": true,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.StringAttribute_oflsa0q",
+					"labelPosition": "left",
+					"control": "$StringAttribute_oflsa0q",
+					"multiline": false,
+					"visible": true,
 					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 4
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -334,7 +360,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 5
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -594,16 +620,49 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"BalName": {
 					"modelConfig": {
 						"path": "PDS.BalName"
-					}
+					},
+					"validators": {
+                	/* Bind the custom validator to the attribute. */
+                	"CallFieldValidator": {
+						"type": "Bal.FieldValidator",
+						"params": {
+							"invalidName": "test",
+							"message": "Invalid name",
+							"minvalue": ""
+						}
+                	}
+            	}
 				},
 				"NumberAttribute_2493bdj": {
 					"modelConfig": {
 						"path": "PDS.BalPriceUSD"
+					},
+					"validators": {
+                	/* Bind the custom validator to the attribute. */
+                	"CallFieldValidator": {
+						"type": "Bal.FieldValidator",
+						"params": {
+							"invalidName": "test",
+							"message": "Minimim value must be 100",
+							"minvalue": "100"
+						}
+                	}
 					}
 				},
 				"NumberAttribute_n3ght3u": {
 					"modelConfig": {
 						"path": "PDS.BalAreaSqft"
+					},
+					"validators": {
+                	/* Bind the custom validator to the attribute. */
+                	"CallFieldValidator": {
+						"type": "Bal.FieldValidator",
+						"params": {
+							"invalidName": "test",
+							"message": "Minimim value must be 10",
+							"minvalue": "10"
+						}
+                	}
 					}
 				},
 				"LookupAttribute_wk8x94q": {
@@ -644,7 +703,15 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"GridDetail_jj7jhj4": {
 					"isCollection": true,
 					"modelConfig": {
-						"path": "GridDetail_jj7jhj4DS"
+						"path": "GridDetail_jj7jhj4DS",
+						"sortingConfig": {
+							"default": [
+								{
+									"direction": "asc",
+									"columnName": "BalRealtyVisitDateTime"
+								}
+							]
+						}
 					},
 					"viewModelConfig": {
 						"attributes": {
@@ -725,8 +792,83 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				]
 			}
 		}/**SCHEMA_MODEL_CONFIG*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+		{
+			request: "bal.pushmebuttonclicked",
+			/* The custom implementation of the system query handler. */
+			handler: async (request, next) => {
+				
+				//request.$context.BalRealtCommentsFreedom = await request.$context.BalName;
+				Terrasoft.showInformation("Button Clicked" + await request.$context.BalName);
+				/* If the UsrName field changes, take the following steps. */
+				this.console.log("button clicked");
+            /* Call the next handler if it exists and return its result. */
+            return next?.handle(request);
+        	}		
+    	},
+		{
+			request: "crt.HandleViewModelAttributeChangeRequest",
+			/* The custom implementation of the system query handler. */
+			handler: async (request, next) => {
+				/* If the UsrName field changes, take the following steps. */
+				if (request.attributeName === 'NumberAttribute_2493bdj' || request.attributeName === 'BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier') {
+					/* Check whether the old UsrName field value matches the UsrDescription field value. */
+					//const isFieldsShouldBeSynchronized = request.oldValue ===   await request.$context.BalRealtCommentsFreedom;
+					//Terrasoft.showErrorMessage(isFieldsShouldBeSynchronized);
+											/* Assign the new UsrName field value to the UsrDescription field. */
+						//request.$context.BalRealtCommentsFreedom = await request.$context.BalName;
+					//request.$context.BalPriceUSD = (await request.$context.BalPriceUSD) + 1;
+					// commission update
+					request.$context.NumberAttribute_knqhvmq = (await request.$context.NumberAttribute_2493bdj) * (await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier);
+					//Terrasoft.showInformation(await request.$context.NumberAttribute_knqhvmq);
+					this.console.log('updated value' + await request.$context.NumberAttribute_2493bdj +'*'+ await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier + '=' + await request.$context.NumberAttribute_knqhvmq);
+					
+				}
+				/* Call the next handler if it exists and return its result. */
+				return next?.handle(request);
+        }
+    }
+			
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"Bal.FieldValidator": {
+				"validator": function (config) {
+					return function (control) {
+						var result;
+						if( control.value !== config.invalidName)
+						{
+							result = null;
+						}
+						if (control.value === config.invalidName){
+							result ={
+								"Bal.FieldValidator": { message: config.message }
+							};
+						}
+						if (config.minvalue !== "" & config.minvalue > control.value ){
+							result ={
+								"Bal.FieldValidator": { message: config.message }
+							};
+						}
+						else{
+							result = null;
+						}
+						return (result);
+					};
+				},
+				"params": [
+					{
+						"name": "invalidName"
+					},
+					{
+						"name": "message"
+					},
+					{
+						"name": "minvalue"
+					}
+				],
+				"async": false
+    		}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });
