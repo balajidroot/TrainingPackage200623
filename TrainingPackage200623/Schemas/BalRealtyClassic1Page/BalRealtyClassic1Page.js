@@ -62,7 +62,8 @@ define("BalRealtyClassic1Page", [], function() {
 				//todo				
 				var OfferTypeObject = this.get("BalRealtyOfferTypeClassic");
 				var offermultiplier = OfferTypeObject? OfferTypeObject.BalCommissionMultiplierClassic: 0;
-				this.set("BalCommissionUSDClassic",this.get("BalPriceUSDClassic")* (offermultiplier=== undefined? 0: offermultiplier) );
+				var price = (this.get("BalPriceUSDClassic")) === undefined? 0 : this.get("BalPriceUSDClassic");
+				this.set("BalCommissionUSDClassic", price * (offermultiplier=== undefined? 0: offermultiplier) );
 				this.set("BalRealtyCommissionMultiplierClassic",(offermultiplier=== undefined? 0: offermultiplier));
 				this.console.log("commission amount" + this.get("BalCommissionUSDClassic"));
 			},
