@@ -3,6 +3,10 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Realty Classic&quot;" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassic1DetailCaptionOnPage.Value" Value="Объект" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicDetailCaptionOnPage.Value" Value="Объект" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicDetailPageDetailCaptionOnPage.Value" Value="Объект" />
+			<Item Name="LocalizableStrings.BalSchema77553282Detail1333f461DetailCaptionOnPage.Value" Value="Объект" />
 		</Items>
 	</Group>
 </Resources>

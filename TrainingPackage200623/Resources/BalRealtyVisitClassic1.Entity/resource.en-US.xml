@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Visit Classic" />
+			<Item Name="Columns.BalRealtyParentClassic.Caption" Value="Realty Parent Classic" />
+			<Item Name="Columns.BalRealtyVisitCommentsClassic.Caption" Value="Comments Classic" />
+			<Item Name="Columns.BalRealtyVisitDateTimeClassic.Caption" Value="Visit Date Time Classic" />
+			<Item Name="Columns.BalRealtyVisitManagerClassic.Caption" Value="Visit Manager Classic" />
+		</Items>
+	</Group>
+</Resources>

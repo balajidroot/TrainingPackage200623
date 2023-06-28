@@ -2,13 +2,20 @@
   "Descriptor": {
     "UId": "52078709-52c4-4822-a1c3-de74b986be3e",
     "Name": "SysModuleInWorkplace_SectionInWorkplaceManager_318f11341fa54fc484c1618f453feb3d",
-    "ModifiedOnUtc": "\/Date(1687711256000)\/",
+    "ModifiedOnUtc": "\/Date(1687927247000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "a8b20179-02be-4a13-8908-9fc51cb9f66d",
       "Name": "SysModuleInWorkplace"
     },
     "Columns": [
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
       {
         "ColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
         "IsForceUpdate": false,
@@ -22,13 +29,6 @@
         "IsKey": false,
         "ColumnName": "SysModule",
         "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
-      },
-      {
-        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-        "IsForceUpdate": false,
-        "IsKey": true,
-        "ColumnName": "Id",
-        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
       },
       {
         "ColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",

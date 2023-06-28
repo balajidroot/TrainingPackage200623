@@ -3,8 +3,16 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Edit page: &quot;Realty Classic&quot;" />
+			<Item Name="LocalizableStrings.BalAutoVisitsButtonCaption.Value" Value="Add Auto Visit" />
 			<Item Name="LocalizableStrings.BalPostivevaluemessage.Value" Value="Value must be great than zero" />
 			<Item Name="LocalizableStrings.BalPushmeButtonClassic.Value" Value="Double Price" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassic1DetailCaptionOnPage.Value" Value="Realty Visit Classic" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicDetailCaptionOnPage.Value" Value="Realty Visit Classic" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicDetailPageDetailCaptionOnPage.Value" Value="Bal Realty Visit Classic" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicTabLabelGroup486757d4GroupCaption.Value" Value="Reality Visits Buttons" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicTabLabelTabCaption.Value" Value="Realty Visit Classic" />
+			<Item Name="LocalizableStrings.BalRealtyVisitClassicTabTabCaption.Value" Value="Realty Visits" />
+			<Item Name="LocalizableStrings.BalSchema77553282Detail1333f461DetailCaptionOnPage.Value" Value="Realty Visit Classic" />
 		</Items>
 	</Group>
 </Resources>

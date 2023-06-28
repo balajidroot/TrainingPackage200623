@@ -32,6 +32,14 @@ define("BalRealtyClassic1Page", [], function() {
 					"masterColumn": "Id",
 					"detailColumn": "BalRealtyClassic"
 				}
+			},
+			"BalSchema77553282Detail1333f461": {
+				"schemaName": "BalRealtyVisitClassic1Detail",
+				"entitySchemaName": "BalRealtyVisitClassic1",
+				"filter": {
+					"detailColumn": "BalRealtyParentClassic",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
@@ -100,6 +108,8 @@ define("BalRealtyClassic1Page", [], function() {
 				"name": "BalPushmeButtonClassic",
 				"values": {
 					"itemType": 5,
+					"className": "Terrasoft.Button",
+					"style": "red",
 					"caption": {
 						"bindTo": "Resources.Strings.BalPushmeButtonClassic"
 					},
@@ -339,6 +349,52 @@ define("BalRealtyClassic1Page", [], function() {
 				"values": {
 					"order": 1
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "BalRealtyVisitClassicTabLabel",
+				"values": {
+					"caption": {
+						"bindTo": "Resources.Strings.BalRealtyVisitClassicTabLabelTabCaption"
+					},
+					"items": [],
+					"order": 2
+				},
+				"parentName": "Tabs",
+				"propertyName": "tabs",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "BalAutoVisitsButtonClassic",
+				"values": {
+					"itemType": 5,
+					"className": "Terrasoft.Button",
+					"style": "green",
+					"caption": {
+						"bindTo": "Resources.Strings.BalAutoVisitsButtonCaption"
+					},
+					"click": {
+						"bindTo": ""
+					},
+					"enabled": {
+						"bindTo": ""
+					}
+				},
+				"parentName": "BalRealtyVisitClassicTabLabel",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "BalSchema77553282Detail1333f461",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "BalRealtyVisitClassicTabLabel",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_DIFF*/
 	};

@@ -1,4 +1,3 @@
-/* jshint esversion: 11 */
 define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -52,6 +51,45 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Button_rnemmng",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_rnemmng_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "only-text",
+					"layoutConfig": {},
+					"visible": true,
+					"menuItems": [],
+					"clickMode": "menu"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_j9vam8q",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_j9vam8q_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "BalCreateRealtyVisitFreedomProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "BalRealtyInputId"
+						}
+					}
+				},
+				"parentName": "Button_rnemmng",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "Button_ykr0q8g",
 				"values": {
 					"type": "crt.Button",
@@ -68,7 +106,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -622,31 +660,29 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"path": "PDS.BalName"
 					},
 					"validators": {
-                	/* Bind the custom validator to the attribute. */
-                	"CallFieldValidator": {
-						"type": "Bal.FieldValidator",
-						"params": {
-							"invalidName": "test",
-							"message": "Invalid name",
-							"minvalue": ""
+						"CallFieldValidator": {
+							"type": "Bal.FieldValidator",
+							"params": {
+								"invalidName": "test",
+								"message": "Invalid name",
+								"minvalue": ""
+							}
 						}
-                	}
-            	}
+					}
 				},
 				"NumberAttribute_2493bdj": {
 					"modelConfig": {
 						"path": "PDS.BalPriceUSD"
 					},
 					"validators": {
-                	/* Bind the custom validator to the attribute. */
-                	"CallFieldValidator": {
-						"type": "Bal.FieldValidator",
-						"params": {
-							"invalidName": "test",
-							"message": "Minimim value must be 100",
-							"minvalue": "100"
+						"CallFieldValidator": {
+							"type": "Bal.FieldValidator",
+							"params": {
+								"invalidName": "test",
+								"message": "Minimim value must be 100",
+								"minvalue": "100"
+							}
 						}
-                	}
 					}
 				},
 				"NumberAttribute_n3ght3u": {
@@ -654,15 +690,14 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"path": "PDS.BalAreaSqft"
 					},
 					"validators": {
-                	/* Bind the custom validator to the attribute. */
-                	"CallFieldValidator": {
-						"type": "Bal.FieldValidator",
-						"params": {
-							"invalidName": "test",
-							"message": "Minimim value must be 10",
-							"minvalue": "10"
+						"CallFieldValidator": {
+							"type": "Bal.FieldValidator",
+							"params": {
+								"invalidName": "test",
+								"message": "Minimim value must be 10",
+								"minvalue": "10"
+							}
 						}
-                	}
 					}
 				},
 				"LookupAttribute_wk8x94q": {

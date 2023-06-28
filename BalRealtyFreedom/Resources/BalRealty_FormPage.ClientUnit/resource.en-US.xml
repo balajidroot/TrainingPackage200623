@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.addRecord_m90qj68_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_to0ycnp_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_zbstnz3_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.Button_rnemmng_caption.Value" Value="Menu" />
 			<Item Name="LocalizableStrings.Button_ykr0q8g_caption.Value" Value="Click JS" />
 			<Item Name="LocalizableStrings.ExpansionPanel_gmuf1nk_title.Value" Value="Realty Visit (Freedom UI)" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_756ucwq_caption.Value" Value="New" />
@@ -16,6 +17,7 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_inpk8bz_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_hbz0fft_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_bwvmnva_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_j9vam8q_caption.Value" Value="Add Visits" />
 			<Item Name="LocalizableStrings.NumberInput_xn7yloy_label.Value" Value="Number" />
 		</Items>
 	</Group>

@@ -21,6 +21,7 @@
 + MetaData.Schema.D29 "null"
 + MetaData.Schema.D30 "null"
 + MetaData.Schema.D31 "null"
++ MetaData.Schema.D38 true
 + MetaData.Schema.D2 {
   "UId": "22ca58aa-8314-f01e-b400-7a12208c8e93",
   "A2": "BalRealtyVisitComments",

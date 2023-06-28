@@ -12,6 +12,11 @@
         "Name": "CrtBase"
       },
       {
+        "UId": "29996b0e-2b19-27a8-dab4-67fbc00db573",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtProcessDesigner"
+      },
+      {
         "UId": "7f8469ff-cb9b-40f6-a5f5-6aa3ddded07a",
         "PackageVersion": "7.8.0",
         "Name": "HomePage"
