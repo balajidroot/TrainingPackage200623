@@ -2,7 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="New edit page" />
+			<Item Name="Caption" Value="Average Result Display" />
 			<Item Name="LocalizableStrings.Button_doz9jjq_caption.Value" Value="Close" />
 			<Item Name="Parameters.3086d241-5e4e-1d83-f90f-e7e5a6cf8247.Caption" Value="Average Price USD" />
 			<Item Name="Parameters.af02fc26-0031-99b0-b0fe-53b009ad32e5.Caption" Value="Sql Text" />

@@ -1,13 +1,13 @@
 ﻿{
   "Descriptor": {
     "UId": "9ae3c022-7110-40ac-9552-f4b1a0d447fc",
-    "Name": "BalPage_vgbnw1x",
-    "ModifiedOnUtc": "\/Date(1687967105000)\/",
+    "Name": "BalRealtyAverageResultPage",
+    "ModifiedOnUtc": "\/Date(1687967385000)\/",
     "Parent": {
       "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
       "Name": "ListFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "New edit page"
+    "Caption": "Average Result Display"
   }
 }
