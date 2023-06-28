@@ -8,6 +8,7 @@
       "Name": "BaseMiniPageTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Realty Visit (Freedom UI) modal page"
+    "Caption": "Realty Visit (Freedom UI) modal page",
+    "DependsOn": []
   }
 }

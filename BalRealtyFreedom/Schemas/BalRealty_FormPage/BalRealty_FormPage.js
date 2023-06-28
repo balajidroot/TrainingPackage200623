@@ -90,6 +90,26 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "MenuItem_bp2r1xg",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_bp2r1xg_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "BalCalculateRealtyAveragePriceSqft",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "RealtyIdParameter1"
+						}
+					}
+				},
+				"parentName": "Button_rnemmng",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Button_ykr0q8g",
 				"values": {
 					"type": "crt.Button",

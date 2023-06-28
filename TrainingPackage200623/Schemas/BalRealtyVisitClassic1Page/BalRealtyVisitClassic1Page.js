@@ -5,7 +5,44 @@ define("BalRealtyVisitClassic1Page", [], function() {
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
 		details: /**SCHEMA_DETAILS*/{}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {			
+			
+			//nto working in this page
+			/* Initialize the schema. */
+            init: function() {
+                /* Call the parent method. */
+                this.callParent(arguments);
+				this.subscribeForWebsocketEvents();
+            },
+			destroy: function() {
+				this.callParent(arguments);
+				this.unsubscribeForWebsocketEvents();
+			},
+			subscribeForWebsocketEvents: function() {
+				this.Terrasoft.ServerChannel.on(this.Terrasoft.EventName.ON_MESSAGE,this.onWebsocketMessage, this);
+			},
+			unsubscribeForWebsocketEvents: function() {
+				this.Terrasoft.ServerChannel.un(this.Terrasoft.EventName.ON_MESSAGE,this.onWebsocketMessage, this);
+			},		
+			
+			onWebsocketMessage: function(scope, message) {
+				if (!message) {
+					return;
+				}
+				if (!message.Header) {
+					return;
+				}
+				if (message.Header.Sender === "CreateRealtyVisitClassicProcess") {
+					this.console.log("Create Realty Visit Classic Process - Refresh Invoked " + JSNON.stringify(message));
+					this.reloadGridData();
+				}
+				else{
+					return;
+				}
+				
+			}
+			
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{				

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "cfcfa583-1182-4e26-8720-25fc2bff900b",
+    "Name": "BalCreateRealtyVisitClassicProcess",
+    "ModifiedOnUtc": "\/Date(1687947519000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Create Realty Visit Classic Process",
+    "DependsOn": []
+  }
+}

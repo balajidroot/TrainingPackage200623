@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "82ebc3dd-1dd3-4c2b-bec3-dc72b0620b19",
+    "Name": "BalCalculateRealtyAveragePriceSqft",
+    "ModifiedOnUtc": "\/Date(1687965046000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calculate Realty Average Price Sqft",
+    "DependsOn": []
+  }
+}

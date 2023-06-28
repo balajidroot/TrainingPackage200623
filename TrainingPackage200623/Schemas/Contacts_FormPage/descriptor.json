@@ -9,6 +9,7 @@
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Contacts form page"
+    "Caption": "Contacts form page",
+    "DependsOn": []
   }
 }

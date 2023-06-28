@@ -1,6 +1,15 @@
 define("BalRealtyClassic1Page", [], function() {
 	return {
 		entitySchemaName: "BalRealtyClassic",
+		messages: {
+            /* Message name. */
+            "NewMessage": {
+                /* Broadcast message. */
+                "mode": Terrasoft.MessageMode.BROADCAST,
+                /* The message direction is subscription. */
+                "direction": Terrasoft.MessageDirectionType.SUBSCRIBE
+            }
+        },
 		attributes: {
 			
 			"BalRealtyOfferTypeClassic": {
@@ -99,7 +108,26 @@ define("BalRealtyClassic1Page", [], function() {
 				/* Set up validation for the [Email] column. */
 				this.addColumnValidator("BalPriceUSDClassic", this.minvaluevalidation);
 				this.addColumnValidator("BalRealtyAreaSqftClassic", this.minvaluevalidation);
-			}
+			},
+			
+			
+			 /* Initialize the schema. */
+            init: function() {
+                /* Call the parent method. */
+                this.callParent(arguments);
+                /* Subscribe to the NewMessage message. */
+                this.sandbox.subscribe("NewMessage", this.onNewMessage, this);
+            },
+            /* Handle the reception event of the NewMessage message. */
+            onNewMessage: function(args) {
+                /* Save the message body to local variables. */
+                var birthday = args.birthday;
+                var name = args.name;
+                /* Display the body in the browser console. */
+                //window.console.info("Received message: NewMessage. Name: " + name + "; birthday: " + birthday);
+				window.console.info("Received message in Realty Page: NewMessage" + JSON.stringify(args));
+            }
+			
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
@@ -127,7 +155,7 @@ define("BalRealtyClassic1Page", [], function() {
 				},
 				"parentName": "ActionButtonsContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -364,7 +392,7 @@ define("BalRealtyClassic1Page", [], function() {
 				"propertyName": "tabs",
 				"index": 2
 			},
-			{
+			/*{
 				"operation": "insert",
 				"name": "BalAutoVisitsButtonClassic",
 				"values": {
@@ -384,7 +412,7 @@ define("BalRealtyClassic1Page", [], function() {
 				"parentName": "BalRealtyVisitClassicTabLabel",
 				"propertyName": "items",
 				"index": 0
-			},
+			},*/
 			{
 				"operation": "insert",
 				"name": "BalSchema77553282Detail1333f461",

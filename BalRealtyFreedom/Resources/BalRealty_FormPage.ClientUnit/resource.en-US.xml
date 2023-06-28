@@ -17,6 +17,7 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_inpk8bz_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_hbz0fft_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_bwvmnva_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_bp2r1xg_caption.Value" Value="Calculate Average" />
 			<Item Name="LocalizableStrings.MenuItem_j9vam8q_caption.Value" Value="Add Visits" />
 			<Item Name="LocalizableStrings.NumberInput_xn7yloy_label.Value" Value="Number" />
 		</Items>
