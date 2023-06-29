@@ -11,6 +11,7 @@
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordAddMode.Caption" Value="Record adding mode" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordDefValues.Caption" Value="Set column values" />
 			<Item Name="BaseElements.AddDataUserTask1.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Freedome UI websocket" />
 			<Item Name="BaseElements.SequenceFlow4.Caption" Value="set realty id process parameter" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="add visits on record add" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Unique identifier of record" />

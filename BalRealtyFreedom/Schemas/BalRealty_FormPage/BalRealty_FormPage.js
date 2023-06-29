@@ -1,4 +1,5 @@
-define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+/* jshint esversion: 11 */
+define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -619,7 +620,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"colSpan": 2,
 						"column": 1,
 						"row": 1,
-						"rowSpan": 6
+						"rowSpan": 13
 					},
 					"selectedRows": "$GridDetail_jj7jhj4_SelectedRows",
 					"_filterOptions": {
@@ -670,6 +671,9 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
 			"attributes": {
+				
+				"RefreshRealtyVisitSocket": {},
+				
 				"Id": {
 					"modelConfig": {
 						"path": "PDS.Id"
@@ -874,15 +878,76 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						//request.$context.BalRealtCommentsFreedom = await request.$context.BalName;
 					//request.$context.BalPriceUSD = (await request.$context.BalPriceUSD) + 1;
 					// commission update
-					request.$context.NumberAttribute_knqhvmq = (await request.$context.NumberAttribute_2493bdj) * (await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier);
-					//Terrasoft.showInformation(await request.$context.NumberAttribute_knqhvmq);
-					this.console.log('updated value' + await request.$context.NumberAttribute_2493bdj +'*'+ await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier + '=' + await request.$context.NumberAttribute_knqhvmq);
-					
+							request.$context.NumberAttribute_knqhvmq = (await request.$context.NumberAttribute_2493bdj) * (await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier);
+							//Terrasoft.showInformation(await request.$context.NumberAttribute_knqhvmq);
+							this.console.log('updated value' + await request.$context.NumberAttribute_2493bdj +'*'+ await request.$context.BalRealtyOfferTypeFreedomBalOfferTypeCommissionMultiplier + '=' + await request.$context.NumberAttribute_knqhvmq);
+
+						}
+						/* Call the next handler if it exists and return its result. */
+						return next?.handle(request);
 				}
-				/* Call the next handler if it exists and return its result. */
-				return next?.handle(request);
-        }
-    }
+			},
+			{
+				request: "crt.HandleViewModelInitRequest",
+				handler: async (request, next) => {
+					request.$context.RefreshRealtyVisitSocket = (context, message) => {
+						//this.console.log("listen websocket Freedom" + JSON.stringify(message));
+						
+						/*var name = JSON.parse(JSON.stringify(message), function (key, value) {
+						  if (key == "name") {
+							return value;
+						  } else {
+							return "Key:" + value;
+						  }
+						});*/
+						this.console.log(message.Header.Sender);
+						this.console.log(message.Header.Sender);
+						if (message?.Header.Sender === "CreateRealtyVisitFreedomProcess") {
+							//Terrasoft.showInformation("Text");
+							//this.reloadEntity();
+							this.console.log("listen websocket Freedom" + JSON.stringify(message));
+							//this.console.log("Freedom RealtyVisit refreshed websocket");
+							//this.location.reload();
+							//request.$context.GridDetail_jj7jhj4.reload();
+							
+							/*const handlerChain = sdk.HandlerChainService.instance;
+							handlerChain.process({
+								type: "crt.LoadDataRequest",
+								$context: request.$context,
+								config: {
+									loadType: "reload"
+								},
+								dataSourceName: "GridDetail_jj7jhj4DS"
+							});*/
+							
+							
+//							setInterval(async ()=>{
+                                const handlerChain = sdk.HandlerChainService.instance;
+                                handlerChain.process({
+                                    type: 'crt.LoadDataRequest',
+                                       $context: request.$context,
+                                    config: {
+                                        loadType: 'reload'
+                                    },
+                                    dataSourceName: "GridDetail_jj7jhj4DS"
+                                });                        
+                           // }, 1000);
+							
+						}
+					};
+					Terrasoft.ServerChannel.on(Terrasoft.EventName.ON_MESSAGE, (await request.$context.RefreshRealtyVisitSocket), request.$context);
+					return next.handle(request);
+					}
+			},
+			
+			{
+				request: "crt.HandleViewModelDestroyRequest",
+				handler: async (request, next) => {
+					Terrasoft.ServerChannel.un(Terrasoft.EventName.ON_MESSAGE, (await request.$context.RefreshRealtyVisitSocket), request.$context);
+					return next.handle(request);
+				}
+			},
+			
 			
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
