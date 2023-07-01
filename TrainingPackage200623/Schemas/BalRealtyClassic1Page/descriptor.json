@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "3217e03a-7aed-4121-99ad-4aec65f05139",
     "Name": "BalRealtyClassic1Page",
-    "ModifiedOnUtc": "\/Date(1687946296000)\/",
+    "ModifiedOnUtc": "\/Date(1688245153000)\/",
     "Parent": {
       "UId": "d62293c0-7f14-44b1-b547-735fb40499cd",
       "Name": "BaseModulePageV2"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Edit page: \"Realty Classic\"",
-    "DependsOn": []
+    "Caption": "Edit page: \"Realty Classic\""
   }
 }

@@ -1,4 +1,4 @@
-define("BalRealtyClassic1Page", [], function() {
+define("BalRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 	return {
 		entitySchemaName: "BalRealtyClassic",
 		messages: {
@@ -75,6 +75,37 @@ define("BalRealtyClassic1Page", [], function() {
 				//Terrasoft.showInformation("price doubled " + this.get("BalPriceUSDClassic"));
 			},
 			
+			
+			//Get total amount webservice
+			onGetTotalAmountButtonClick: function(){
+			var typeObject = this.get("BalRealtyTypeClassic1");
+				this.console.log(JSON.stringify(typeObject));
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("BalRealtyOfferTypeClassic");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var params = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId,
+					entityName: "BalRealtyClassic",
+					typeFieldName: "BalRealtyTypeClassic1Id",
+					offerTypeFieldName: "BalRealtyOfferTypeClassicId",
+					priceFieldName: "BalPriceUSDClassic",
+				};				
+				ServiceHelper.callService("BalRealtyService", "GetTotalAmountByTypeId", this.getWebServiceResult, params, this);
+				this.console.log("webservice call made");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("response classic" + JSON.stringify(response));
+				this.Terrasoft.showInformation("Total amount by typeId: " + response.GetTotalAmountByTypeIdResult);
+			},
+						
+			//Calcualte commission based on field change.
 			calculateCommissionAmount: function(){
 				//todo				
 				var OfferTypeObject = this.get("BalRealtyOfferTypeClassic");
@@ -147,15 +178,44 @@ define("BalRealtyClassic1Page", [], function() {
 					"enabled": {
 						"bindTo": "onPushMeButtonEnable"
 					},
+					"visible":true,
 					"layout": {
-						"column": 1,
-						"row": 6,
-						"colSpan": 1
+						"column": 2,
+						"row": 7,
+						"colSpan": 1,
+						"rowSpan": 1,
 					}
 				},
 				"parentName": "ActionButtonsContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "BalGetTotalAmountButtonClassic",
+				"values": {
+					"itemType": 5,
+					"className": "Terrasoft.Button",
+					"style": "green",
+					"caption": {
+						"bindTo": "Resources.Strings.BalGetTotalAmountButtonClassic"
+					},
+					"click": {
+						"bindTo": "onGetTotalAmountButtonClick"
+					},
+					"enabled": {
+						"bindTo": "onPushMeButtonEnable"
+					},
+					"layout": {
+						"column": 2,
+						"row": 6,
+						"colSpan": 18,
+						"rowspan":1
+					}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 8
 			},
 			{
 				"operation": "insert",

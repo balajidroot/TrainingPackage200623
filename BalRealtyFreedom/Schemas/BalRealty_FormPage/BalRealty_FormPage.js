@@ -111,6 +111,21 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
+				"name": "MenuItem_zjcg4l5",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_zjcg4l5_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "Bal.GetTotalAmountbyTypeandOffer"
+					}
+				},
+				"parentName": "Button_rnemmng",
+				"propertyName": "menuItems",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "Button_ykr0q8g",
 				"values": {
 					"type": "crt.Button",
@@ -671,14 +686,12 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
 			"attributes": {
-				
-				"RefreshRealtyVisitSocket": {},
-				
 				"Id": {
 					"modelConfig": {
 						"path": "PDS.Id"
 					}
 				},
+				"RefreshRealtyVisitSocket": {},
 				"BalName": {
 					"modelConfig": {
 						"path": "PDS.BalName"
@@ -947,6 +960,98 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					return next.handle(request);
 				}
 			},
+			
+			//end websocket
+			
+			//start webservice call for get total amount
+			{
+			
+					request: "Bal.GetTotalAmountbyTypeandOffer",
+					/* Implementation of the custom query handler. */
+					handler: async (request, next) => {
+					this.console.log("Run web service button works...");
+
+					var typeObject = await request.$context.LookupAttribute_wk8x94q;
+					var typeId = "";
+					var realtyType = "";
+					if (typeObject) {
+						typeId = typeObject.value;
+						realtyType = typeObject.displayValue;
+					}
+					// get id from type lookup type object
+
+					var offerTypeObject = await request.$context.LookupAttribute_1yeogg0;
+					this.console.log("offerTypeObject"+JSON.stringify(offerTypeObject));
+					var offerTypeId = "";
+					var realtyOffer = "";
+					if (offerTypeObject) {
+						offerTypeId = offerTypeObject.value;
+						realtyOffer = offerTypeObject.displayValue;
+					}
+					// get id from type lookup offer type object
+
+					/* Create an instance of the HTTP client from @creatio-devkit/common. */
+					var httpClientService = new sdk.HttpClientService();
+
+					/* Specify the URL to retrieve the current rate. Use the coindesk.com external service. */
+					var baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					var transferName = "rest";
+					var serviceName = "BalRealtyService";
+					var methodName = "GetTotalAmountByTypeId";
+					var endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					//const endpoint = http://localhost/CREATIO809/0/rest/BalRealtyService/GetTotalAmountByTypeId?realtyTypeId=7F2E9F7B-9093-4110-BC5B-F10733B4244F&realtyOfferTypeId=74EBE5AA-2AF0-49E0-A200-6BD2CA3BEFFC&entityName=BalRealty
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+					var params = {
+						realtyTypeId: typeId,
+						realtyOfferTypeId: offerTypeId,
+						entityName: "BalRealty",
+						typeFieldName: "BalRealtyFreedomTypeId",
+						offerTypeFieldName: "BalRealtyOfferTypeFreedomId",
+						priceFieldName: "BalPriceUSD",
+					};
+					var response = await httpClientService.post(endpoint, params);
+					
+					this.console.log("endpoint  = " + endpoint);
+					this.console.log("response  = " + JSON.stringify(response));
+					this.console.log("response total price = " + response.body.GetTotalAmountByTypeIdResult);
+						
+						
+						
+						
+					//call service created by Balaji based on offer type names using GET	
+						
+					httpClientService = new sdk.HttpClientService();
+
+					/* Specify the URL to retrieve the current rate. Use the coindesk.com external service. */
+					baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					transferName = "rest";
+					serviceName = "BalRealtyService";
+					methodName = "GetTotalAmountByTypeandOffer";
+					endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					//const endpoint = http://localhost/CREATIO809/0/rest/BalRealtyService/GetTotalAmountByTypeId?realtyTypeId=7F2E9F7B-9093-4110-BC5B-F10733B4244F&realtyOfferTypeId=74EBE5AA-2AF0-49E0-A200-6BD2CA3BEFFC&entityName=BalRealty
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+
+						
+					var finalurl = endpoint + "?RealtyType="+ realtyType + "&RealtyOffer=" + realtyOffer;
+					this.console.log("finalurl = " + finalurl);
+					/*params = {
+						realtyTypeId: typeId,
+						realtyOfferTypeId: offerTypeId,
+						entityName: "BalRealty"
+					};*/
+					response = await httpClientService.get(finalurl);
+					
+					this.console.log("response by name = " + JSON.stringify(response));
+					//Terrasoft.showInformation(JSON.stringify(response.body.GetTotalAmountByTypeandOfferResult));
+					alert(JSON.stringify(response.body.GetTotalAmountByTypeandOfferResult));
+						
+					
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			
+			
 			
 			
 		]/**SCHEMA_HANDLERS*/,
