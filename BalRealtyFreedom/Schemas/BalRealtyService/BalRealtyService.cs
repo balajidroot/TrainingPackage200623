@@ -186,7 +186,7 @@
             return result;
         }
 		
-		
+		//This method return list of realty 
 		[OperationContract]
         [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped,ResponseFormat = WebMessageFormat.Json)]		
         public List<RealtyResponse> GetRealtyListByTypeandOffer(string RealtyType, string RealtyOffer)
