@@ -1,0 +1,102 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "14861c6b-f4fa-4c83-b2e6-dc17ceb6296b",
+      "A2": "BalService_universitylist",
+      "A5": "9754ae24-7c5c-4504-ade0-1b65eff9dc57",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "0d189608-0af0-4e12-9fb0-3870bddbc77a",
+      "B8": "8.0.9.1582",
+      "IQ1": "http://universities.hipolabs.com",
+      "IQ2": 1,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "92b86f62-045e-488b-a43e-3426dd47c477",
+          "A2": "BalMethod1",
+          "A3": "14861c6b-f4fa-4c83-b2e6-dc17ceb6296b",
+          "A4": "14861c6b-f4fa-4c83-b2e6-dc17ceb6296b",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "00b93629-328d-4824-b2a9-7223df96b4e6",
+                "A2": "BalCountry",
+                "IU1": "country",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 3,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ],
+            "IT2": 1,
+            "IT1": "/search"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "b834ca43-373f-4d2a-824d-71d890cc1a91",
+                "A2": "BalParameter",
+                "IU1": "$",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "b2daab0a-4c08-430b-9f85-aec1d8d016bb",
+                    "A2": "BalCountry",
+                    "IU1": "country",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "0a029279-a9c0-4911-919a-61634cf581ec",
+                    "A2": "BalName",
+                    "IU1": "name",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "bb668153-e400-4c8f-9426-20c1e6f4e4f7",
+                    "A2": "BalStateprovince",
+                    "IU1": "state-province",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

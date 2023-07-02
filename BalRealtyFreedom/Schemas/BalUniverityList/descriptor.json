@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e20b13b9-b9d6-4f2e-9843-03fa2eebfd0a",
+    "Name": "BalUniverityList",
+    "ModifiedOnUtc": "\/Date(1688321221000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "University List",
+    "DependsOn": []
+  }
+}

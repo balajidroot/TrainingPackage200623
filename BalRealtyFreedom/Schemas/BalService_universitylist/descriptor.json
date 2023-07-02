@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "14861c6b-f4fa-4c83-b2e6-dc17ceb6296b",
+    "Name": "BalService_universitylist",
+    "ModifiedOnUtc": "\/Date(1688325774000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "http://universities.hipolabs.com",
+    "DependsOn": []
+  }
+}

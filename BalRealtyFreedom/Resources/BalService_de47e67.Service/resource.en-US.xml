@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="http://universities.hipolabs.com" />
+			<Item Name="ServiceMethods.BalMethod1.Caption" Value="/search" />
+			<Item Name="ServiceMethods.BalMethod1.Request.Parameters.BalCountry.Caption" Value="Country" />
+			<Item Name="ServiceMethods.BalMethod1.Response.Parameters.BalParameter.Caption" Value="Parameter" />
+			<Item Name="ServiceMethods.BalMethod1.Response.Parameters.BalParameter.ItemProperties.BalCountry.Caption" Value="Country" />
+			<Item Name="ServiceMethods.BalMethod1.Response.Parameters.BalParameter.ItemProperties.BalName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.BalMethod1.Response.Parameters.BalParameter.ItemProperties.BalStateprovince.Caption" Value="State-province" />
+		</Items>
+	</Group>
+</Resources>

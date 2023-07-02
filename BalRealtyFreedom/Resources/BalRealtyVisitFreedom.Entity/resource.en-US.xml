@@ -2,7 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Realty Visit (Freedom UI)" />
+			<Item Name="Caption" Value="Realty Visit Freedom UI" />
 			<Item Name="Columns.BalRealtyParentFreedom.Caption" Value="Parent Realty (Freedom UI)" />
 			<Item Name="Columns.BalRealtyPortentialCustomer.Caption" Value="Realty Potential Customer" />
 			<Item Name="Columns.BalRealtyVisitComments.Caption" Value="Visit Comments" />

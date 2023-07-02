@@ -4,6 +4,7 @@
     "Name": "BalRealtyService",
     "ModifiedOnUtc": "\/Date(1688246043000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "BalRealtyService"
+    "Caption": "BalRealtyService",
+    "DependsOn": []
   }
 }

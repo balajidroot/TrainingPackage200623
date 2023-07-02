@@ -8,6 +8,7 @@
       "Name": "BaseModulePageV2"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Edit page: \"Realty Classic\""
+    "Caption": "Edit page: \"Realty Classic\"",
+    "DependsOn": []
   }
 }

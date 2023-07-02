@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2fb4b024-2c00-4936-a550-abf1468ff434",
+    "Name": "BalCreateUniversityRecordSubProcess",
+    "ModifiedOnUtc": "\/Date(1688323541000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Create University Record Sub Process",
+    "DependsOn": []
+  }
+}
