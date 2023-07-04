@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="BalRealtyFreedomSourceCode" />
+			<Item Name="LocalizableStrings.CommentsRequired.Value" Value="{0} is required field for {1}{2}{3}" />
 			<Item Name="LocalizableStrings.ValueIsTooBig.Value" Value="Value more than {0} are not allowed." />
 		</Items>
 	</Group>

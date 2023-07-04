@@ -118,6 +118,30 @@ define("BalRealtyVisitModalPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"parentName": "ComboBox_jqyhen2",
 				"propertyName": "listActions",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_6y4wp93",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"pickerType": "datetime",
+					"label": "$Resources.Strings.DateTimeAttribute_phgkgly",
+					"labelPosition": "above",
+					"control": "$DateTimeAttribute_phgkgly",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 4
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
@@ -140,6 +164,11 @@ define("BalRealtyVisitModalPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"LookupAttribute_gwx39v4": {
 					"modelConfig": {
 						"path": "BalRealtyVisitFreedomDS.BalRealtyVisitManager"
+					}
+				},
+				"DateTimeAttribute_phgkgly": {
+					"modelConfig": {
+						"path": "BalRealtyVisitFreedomDS.CreatedOn"
 					}
 				}
 			}

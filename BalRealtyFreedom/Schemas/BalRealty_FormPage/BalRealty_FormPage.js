@@ -1,7 +1,21 @@
-/* jshint esversion: 11 */
 define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"name": "CardContentWrapper",
+				"values": {
+					"padding": {
+						"left": "small",
+						"right": "small",
+						"top": "none",
+						"bottom": "none"
+					},
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none"
+				}
+			},
 			{
 				"operation": "merge",
 				"name": "Tabs",
@@ -279,28 +293,14 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					"control": "$LookupAttribute_wk8x94q",
 					"listActions": [],
 					"showValueAsLink": true,
-					"controlActions": []
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_cso9lhl",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_cso9lhl_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_0txrhfg",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -677,7 +677,13 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"caption": "#ResourceString(GridDetail_jj7jhj4DS_BalRealtyVisitComments)#",
 							"dataValueType": 30
 						}
-					]
+					],
+					"features": {
+						"editable": {
+							"enable": true,
+							"itemsCreation": true
+						}
+					}
 				},
 				"parentName": "GridContainer_3z0rcc2",
 				"propertyName": "items",
@@ -716,8 +722,8 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"type": "Bal.FieldValidator",
 							"params": {
 								"invalidName": "test",
-								"message": "Minimim value must be 100",
-								"minvalue": "100"
+								"message": "Minimim value must be > 0",
+								"minvalue": "1"
 							}
 						}
 					}
@@ -731,8 +737,8 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 							"type": "Bal.FieldValidator",
 							"params": {
 								"invalidName": "test",
-								"message": "Minimim value must be 10",
-								"minvalue": "10"
+								"message": "Minimim value must be > 0",
+								"minvalue": "1"
 							}
 						}
 					}
@@ -1043,7 +1049,7 @@ define("BalRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 					
 					this.console.log("response by name = " + JSON.stringify(response));
 					//Terrasoft.showInformation(JSON.stringify(response.body.GetTotalAmountByTypeandOfferResult));
-					alert(JSON.stringify(response.body.GetTotalAmountByTypeandOfferResult));
+					alert(JSON.stringify("Total Amount: " + response.body.GetTotalAmountByTypeandOfferResult[0].TotalAmount));
 						
 					
 					/* Call the next handler if it exists and return its result. */

@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "4d7af993-ef4a-4473-b385-0402e474e9d5",
     "Name": "BalUniversityListWebserviceProcess",
-    "ModifiedOnUtc": "\/Date(1688324895000)\/",
+    "ModifiedOnUtc": "\/Date(1688456477000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "University List Webservice Process",
     "DependsOn": []
