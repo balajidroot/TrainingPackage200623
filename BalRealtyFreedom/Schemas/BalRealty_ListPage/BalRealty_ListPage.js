@@ -22,10 +22,6 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"operation": "merge",
 				"name": "DataTable",
 				"values": {
-					"layoutConfig": {
-						"basis": "100%",
-						"width": 300
-					},
 					"columns": [
 						{
 							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
@@ -34,10 +30,55 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"dataValueType": 1
 						},
 						{
+							"id": "40567cf5-8614-43c5-491d-20b5dc6f7858",
+							"code": "PDS_BalPriceUSD",
+							"path": "BalPriceUSD",
+							"caption": "#ResourceString(PDS_BalPriceUSD)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "79a83f39-e03c-0815-4768-22a18212378c",
+							"code": "PDS_BalAreaSqft",
+							"path": "BalAreaSqft",
+							"caption": "#ResourceString(PDS_BalAreaSqft)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "55497f1a-da80-c8ca-9c24-ee6690108edf",
+							"code": "PDS_BalRealtyFreedomType",
+							"path": "BalRealtyFreedomType",
+							"caption": "#ResourceString(PDS_BalRealtyFreedomType)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "BalRealtyTypeLookupFreedomUI"
+						},
+						{
+							"id": "4c0c1ed4-7145-d139-3384-5ebb51852c10",
+							"code": "PDS_BalRealtyOfferTypeFreedom",
+							"path": "BalRealtyOfferTypeFreedom",
+							"caption": "#ResourceString(PDS_BalRealtyOfferTypeFreedom)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "BalRealtyOfferTypeFreedomUI"
+						},
+						{
+							"id": "a3d2564c-dd85-6edc-ca19-abad0a8dfde0",
+							"code": "PDS_BalRealtCommentsFreedom",
+							"path": "BalRealtCommentsFreedom",
+							"caption": "#ResourceString(PDS_BalRealtCommentsFreedom)#",
+							"dataValueType": 28
+						},
+						{
 							"id": "c8689d78-80ba-4e71-8cf2-fa478e3be5bc",
 							"code": "PDS_CreatedOn",
 							"caption": "#ResourceString(PDS_CreatedOn)#",
 							"dataValueType": 7
+						},
+						{
+							"id": "effd0688-f4ea-8312-db54-1d052558f3d8",
+							"code": "PDS_BalRealtyManagerFreedom",
+							"path": "BalRealtyManagerFreedom",
+							"caption": "#ResourceString(PDS_BalRealtyManagerFreedom)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact"
 						},
 						{
 							"id": "fd4b3485-a46e-4219-b775-adef1210fe51",
@@ -45,9 +86,25 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"caption": "#ResourceString(PDS_CreatedBy)#",
 							"dataValueType": 10
 						},
+						{
+							"id": "3cb0957e-8ab0-8db6-0ff8-fc098132ef14",
+							"code": "PDS_BalCommissionusdfreedom",
+							"path": "BalCommissionusdfreedom",
+							"caption": "#ResourceString(PDS_BalCommissionusdfreedom)#",
+							"dataValueType": 32
+						}
 					],
+					"layoutConfig": {
+						"basis": "100%",
+						"width": 300
+					},
 					"primaryColumnName": "PDS_Id",
-					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'"
+					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'",
+					"selectedRows": "$DataTable_SelectedRows",
+					"_filterOptions": {
+						"expose": [],
+						"from": "DataTable_SelectedRows"
+					}
 				}
 			},
 			{
@@ -103,7 +160,7 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					},
 					"justifyContent": "start",
 					"gap": "medium",
-                    "alignItems": "center"
+					"alignItems": "center"
 				},
 				"parentName": "MainFilterContainer",
 				"propertyName": "items",
@@ -201,7 +258,9 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"layoutConfig": {
 						"width": 328.125
 					},
-					"classes": ["section-folder-tree"]
+					"classes": [
+						"section-folder-tree"
+					]
 				},
 				"parentName": "SectionContentWrapper",
 				"propertyName": "items",
@@ -210,9 +269,66 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
 			"attributes": {
-				"ItemsSorting": {},
 				"Items": {
-					"isCollection": true,
+					"viewModelConfig": {
+						"attributes": {
+							"PDS_BalName": {
+								"modelConfig": {
+									"path": "PDS.BalName"
+								}
+							},
+							"PDS_BalPriceUSD": {
+								"modelConfig": {
+									"path": "PDS.BalPriceUSD"
+								}
+							},
+							"PDS_BalAreaSqft": {
+								"modelConfig": {
+									"path": "PDS.BalAreaSqft"
+								}
+							},
+							"PDS_BalRealtyFreedomType": {
+								"modelConfig": {
+									"path": "PDS.BalRealtyFreedomType"
+								}
+							},
+							"PDS_BalRealtyOfferTypeFreedom": {
+								"modelConfig": {
+									"path": "PDS.BalRealtyOfferTypeFreedom"
+								}
+							},
+							"PDS_BalRealtCommentsFreedom": {
+								"modelConfig": {
+									"path": "PDS.BalRealtCommentsFreedom"
+								}
+							},
+							"PDS_CreatedOn": {
+								"modelConfig": {
+									"path": "PDS.CreatedOn"
+								}
+							},
+							"PDS_BalRealtyManagerFreedom": {
+								"modelConfig": {
+									"path": "PDS.BalRealtyManagerFreedom"
+								}
+							},
+							"PDS_CreatedBy": {
+								"modelConfig": {
+									"path": "PDS.CreatedBy"
+								}
+							},
+							"PDS_BalCommissionusdfreedom": {
+								"modelConfig": {
+									"path": "PDS.BalCommissionusdfreedom"
+								}
+							},
+							"PDS_Id": {
+								"modelConfig": {
+									"path": "PDS.Id"
+								}
+							}
+						}
+					},
 					"modelConfig": {
 						"path": "PDS",
 						"pagingConfig": {
@@ -231,32 +347,9 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 								"loadOnChange": true
 							}
 						]
-					},
-					"viewModelConfig": {
-						"attributes": {
-							"PDS_Id": {
-								"modelConfig": {
-									"path": 'PDS.Id',
-								}
-							},
-							"PDS_BalName": {
-								"modelConfig": {
-									"path": "PDS.BalName"
-								}
-							},
-							"PDS_CreatedOn": {
-								"modelConfig": {
-									"path": "PDS.CreatedOn"
-								}
-							},
-							"PDS_CreatedBy": {
-								"modelConfig": {
-									"path": "PDS.CreatedBy"
-								}
-							}
-						}
 					}
 				},
+				"ItemsSorting": {},
 				"FolderTree_visible": {
 					"value": false
 				},
@@ -345,7 +438,39 @@ define("BalRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"type": "crt.EntityDataSource",
 					"hiddenInPageDesigner": true,
 					"config": {
-						"entitySchemaName": "BalRealty"
+						"entitySchemaName": "BalRealty",
+						"attributes": {
+							"BalName": {
+								"path": "BalName"
+							},
+							"BalPriceUSD": {
+								"path": "BalPriceUSD"
+							},
+							"BalAreaSqft": {
+								"path": "BalAreaSqft"
+							},
+							"BalRealtyFreedomType": {
+								"path": "BalRealtyFreedomType"
+							},
+							"BalRealtyOfferTypeFreedom": {
+								"path": "BalRealtyOfferTypeFreedom"
+							},
+							"BalRealtCommentsFreedom": {
+								"path": "BalRealtCommentsFreedom"
+							},
+							"CreatedOn": {
+								"path": "CreatedOn"
+							},
+							"BalRealtyManagerFreedom": {
+								"path": "BalRealtyManagerFreedom"
+							},
+							"CreatedBy": {
+								"path": "CreatedBy"
+							},
+							"BalCommissionusdfreedom": {
+								"path": "BalCommissionusdfreedom"
+							}
+						}
 					},
 					"scope": "viewElement"
 				}

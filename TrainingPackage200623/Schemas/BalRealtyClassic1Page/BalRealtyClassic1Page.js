@@ -182,13 +182,13 @@ define("BalRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 					"layout": {
 						"column": 2,
 						"row": 7,
-						"colSpan": 1,
+						"colSpan": 12,
 						"rowSpan": 1,
 					}
 				},
 				"parentName": "ActionButtonsContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
