@@ -2,20 +2,13 @@
   "Descriptor": {
     "UId": "ec1780c5-8a4c-9c76-c132-39b2fa1cecea",
     "Name": "BalRealtyOfferTypeFreedomUI_ec1780c58a4c9c76c13239b2fa1cecea",
-    "ModifiedOnUtc": "\/Date(1687443674000)\/",
+    "ModifiedOnUtc": "\/Date(1688553228000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "50ab12d8-05b5-4603-b5f8-aa482a498df2",
       "Name": "BalRealtyOfferTypeFreedomUI"
     },
     "Columns": [
-      {
-        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
-        "IsForceUpdate": false,
-        "IsKey": false,
-        "ColumnName": "Name",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-      },
       {
         "ColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
         "IsForceUpdate": false,
@@ -24,11 +17,11 @@
         "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
       },
       {
-        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "ColumnUId": "a4235863-735f-e95c-f9dd-8bf56b8432ac",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "Description",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+        "ColumnName": "BalOfferTypeCommissionMultiplier",
+        "DataTypeValueUId": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
       },
       {
         "ColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -38,18 +31,25 @@
         "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
       },
       {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
         "IsForceUpdate": false,
         "IsKey": true,
         "ColumnName": "Id",
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
-      },
-      {
-        "ColumnUId": "a4235863-735f-e95c-f9dd-8bf56b8432ac",
-        "IsForceUpdate": false,
-        "IsKey": false,
-        "ColumnName": "BalOfferTypeCommissionMultiplier",
-        "DataTypeValueUId": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
       }
     ]
   }
