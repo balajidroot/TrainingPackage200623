@@ -157,7 +157,80 @@ define("BalRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
                 /* Display the body in the browser console. */
                 //window.console.info("Received message: NewMessage. Name: " + name + "; birthday: " + birthday);
 				window.console.info("Received message in Realty Page: NewMessage" + JSON.stringify(args));
-            }
+            },
+			
+			//to validate the no of visits for an apartment.
+			asyncValidate: function(callback, scope) {
+				this.console.log("Entered async");
+				this.callParent([
+						function(response) {
+					if (!this.validateResponse(response)) {
+						return;
+					}
+					this.validateRealtyData(function(response) {
+						if (!this.validateResponse(response)) {
+							return;
+						}
+						callback.call(scope, response);
+					}, this);
+				}, this]);
+			},
+			validateRealtyData: function(callback, scope) {
+				this.console.log("Entered validateRealtyData");
+				var typeObject = this.get("BalRealtyTypeClassic1");
+				var offerTypeObject = this.get("BalRealtyOfferTypeClassic");
+				var RealtyId = this.get("Id");
+				var RealtyComments = this.get("BalRealtyCommentClassic");
+				
+				if (!typeObject || !offerTypeObject) {
+					if (callback) {
+						callback.call(scope, {
+							success: true
+						});
+					}
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeId = offerTypeObject.value;
+				// create query for server side
+				var esq = this.Ext.create("Terrasoft.EntitySchemaQuery", {
+					rootSchemaName: "BalRealtyVisitClassic1"
+				});
+				esq.addAggregationSchemaColumn("Id", Terrasoft.AggregationType.COUNT, "NoofVisits");
+				var visitRealtyFilter = esq.createColumnFilterWithParameter(this.Terrasoft.ComparisonType.EQUAL,
+							"BalRealtyParentClassic", RealtyId);
+				esq.filters.addItem(visitRealtyFilter);
+				//var offerTypeFilter = esq.createColumnFilterWithParameter(this.Terrasoft.ComparisonType.EQUAL,							"UsrOfferType", offerTypeId);
+				//esq.filters.addItem(offerTypeFilter);
+				
+				esq.getEntityCollection(function(response) {
+					if (response.success && response.collection) {
+						var visitcount = 0;
+						var items = response.collection.getItems();
+						if (items.length > 0) {
+							visitcount = items[0].get("NoofVisits");
+						}
+						this.console.log("NoofVisits: "+visitcount);
+						var max = 25;
+						if (visitcount > max &&  RealtyComments == "") {
+							if (callback) {
+								callback.call(this, {
+									success: false,
+									message: "You cannot save, fill the comments reason for high no of visits" + visitcount + " is bigger than " + max
+								});
+							}
+						} else
+						if (callback) {
+							this.console.log("Else part triggered");
+							callback.call(scope, {
+								success: true
+							});
+						}
+					}
+				}, this);
+			}
+			
+			
 			
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
